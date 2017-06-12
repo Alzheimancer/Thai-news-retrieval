@@ -3,8 +3,7 @@
 ## Introduction
 This project crawls Thai news articles from the [dailynews.co.th](https://www.dailynews.co.th) Web site.
 The articles are saved in a directory structure based on categories in [JSON](http://www.json.org) file format.
-Later on these JSon files will be indexed to an [Apache Solr](http://lucene.apache.org) instance using the `java -Dtype=application/json -Dc=news -Durl=http://localhost:8983/solr/news/update/json/docs -jar post.jar data/*/*.json` command.
-Unix command : `bin/post -c news ../Thai-news-retrieval-master/data/*/*.json`
+Later on these JSon files will be indexed to an [Apache Solr](http://lucene.apache.org) instance using the `java -Dtype=application/json -Dc=news -Durl=http://localhost:8983/solr/news/update/json/docs -jar post.jar data/*/*.json` command for windows and `bin/post -c news ../Thai-news-retrieval-master/data/*/*.json` for Unix based.
 
 Each article has the following fields:
 
